@@ -16,7 +16,7 @@ namespace LevenshteinDistance
             Stack<LevenshteinOperation> operations = Levenshtein.CalculateEditOperations(word1, word2, out int ldist);
             foreach (LevenshteinOperation operation in operations)
             {
-                Console.WriteLine("{0}: '{1}' -> '{2}'", operation.Operation, word1[operation.Word1Index], word2[operation.Word2Index]);
+                Console.WriteLine("{0}: '{1}' -> '{2}'", operation.Operation, word1[operation.SourceIndex], word2[operation.DestinationIndex]);
             }
             Console.WriteLine("Levenshtein distance: {0}", ldist);
 

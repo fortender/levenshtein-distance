@@ -4,16 +4,16 @@
     public struct LevenshteinOperation
     {
 
-        public LevenshteinOperation(int word1Index, int word2Index, LevenshteinOperations operation)
+        public LevenshteinOperation(int sourceIndex, int destinationIndex, LevenshteinOperations operation)
         {
-            Word1Index = word1Index;
-            Word2Index = word2Index;
+            SourceIndex = sourceIndex;
+            DestinationIndex = destinationIndex;
             Operation = operation;
         }
 
-        public int Word1Index { get; }
+        public int SourceIndex { get; }
 
-        public int Word2Index { get; }
+        public int DestinationIndex { get; }
 
         public LevenshteinOperations Operation { get; }
 
